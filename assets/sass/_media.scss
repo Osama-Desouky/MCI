@@ -1,15 +1,19 @@
-@media (min-width: 1800px) {
-  .container {
-    max-width: 1720px;
-  }
-}
+// @media (min-width: 1800px) {
+//   .container {
+//     max-width: 1720px;
+//   }
+// }
 
-@media (min-width: 1600px) and (max-width: 1799.98px) {
-  .container {
-    max-width: 1520px;
+// @media (min-width: 1600px) and (max-width: 1799.98px) {
+//   .container {
+//     max-width: 1520px;
+//   }
+// }
+@media (min-width: 1600px) {
+    .container {
+      max-width: 1482px;
+    }
   }
-}
-
 @media (min-width: 1400px) and (max-width: 1599.98px) {
   .container {
     max-width: 1320px;

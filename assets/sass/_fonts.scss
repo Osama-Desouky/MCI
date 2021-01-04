@@ -1,19 +1,69 @@
+// @font-face {
+//   font-family: frutiger;
+//   src: url($font-path+"FrutigerLTArabic55Roman.ttf");
+// }
+// @font-face {
+//   font-family: frutiger;
+//   src: url($font-path+"FrutigerLTArabic45Light.ttf");
+//   font-weight: 300;
+// }
+// @font-face {
+//   font-family: frutiger;
+//   src: url($font-path+"FrutigerLTArabic65Bold.ttf");
+//   font-weight: 700;
+// }
+// @font-face {
+//   font-family: frutiger;
+//   src: url($font-path+"FrutigerLTArabic65Bold.ttf");
+//   font-weight: 900;
+// }
+
+// regular
 @font-face {
-  font-family: frutiger;
-  src: url($font-path+"FrutigerLTArabic55Roman.ttf");
+  font-family: 'frutiger';
+  src: url($font-path+"FrutigerLTArabic55-Roman.eot"); /* IE9 Compat Modes */
+  src: url($font-path+"FrutigerLTArabic55-Roman.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */
+       url($font-path+"FrutigerLTArabic55-Roman.woff2") format('woff2'), /* Super Modern Browsers */
+       url($font-path+"FrutigerLTArabic55-Roman.woff") format('woff'), /* Pretty Modern Browsers */
+       url($font-path+"FrutigerLTArabic55-Roman.ttf")  format('truetype'), /* Safari, Android, iOS */
+       url($font-path+"FrutigerLTArabic55-Roman.svg#svgFontName") format('svg'); /* Legacy iOS */
 }
+
+// light
 @font-face {
-  font-family: frutiger;
-  src: url($font-path+"FrutigerLTArabic45Light.ttf");
-  font-weight: 300;
+  font-family: 'frutiger';
+  src: url($font-path+"FrutigerLTArabic-45Light.eot"); /* IE9 Compat Modes */
+  src: url($font-path+"FrutigerLTArabic-45Light.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */
+       url($font-path+"FrutigerLTArabic-45Light.woff2") format('woff2'), /* Super Modern Browsers */
+       url($font-path+"FrutigerLTArabic-45Light.woff") format('woff'), /* Pretty Modern Browsers */
+       url($font-path+"FrutigerLTArabic-45Light.ttf")  format('truetype'), /* Safari, Android, iOS */
+       url($font-path+"FrutigerLTArabic-45Light.svg#svgFontName") format('svg'); /* Legacy iOS */
+
+       font-weight: 300;
 }
+
+// Bold
 @font-face {
-  font-family: frutiger;
-  src: url($font-path+"FrutigerLTArabic65Bold.ttf");
-  font-weight: 700;
+  font-family: 'frutiger';
+  src: url($font-path+"FrutigerLTArabic-65Bold.eot"); /* IE9 Compat Modes */
+  src: url($font-path+"FrutigerLTArabic-65Bold.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */
+       url($font-path+"FrutigerLTArabic-65Bold.woff2") format('woff2'), /* Super Modern Browsers */
+       url($font-path+"FrutigerLTArabic-65Bold.woff") format('woff'), /* Pretty Modern Browsers */
+       url($font-path+"FrutigerLTArabic-65Bold.ttf")  format('truetype'), /* Safari, Android, iOS */
+       url($font-path+"FrutigerLTArabic-65Bold.svg#svgFontName") format('svg'); /* Legacy iOS */
+
+       font-weight: 600;
 }
+
+// Bolder
 @font-face {
-  font-family: frutiger;
-  src: url($font-path+"FrutigerLTArabic65Bold.ttf");
-  font-weight: 900;
+  font-family: 'frutiger';
+  src: url($font-path+"FrutigerLTArabic-65Bold.eot"); /* IE9 Compat Modes */
+  src: url($font-path+"FrutigerLTArabic-65Bold.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */
+       url($font-path+"FrutigerLTArabic-65Bold.woff2") format('woff2'), /* Super Modern Browsers */
+       url($font-path+"FrutigerLTArabic-65Bold.woff") format('woff'), /* Pretty Modern Browsers */
+       url($font-path+"FrutigerLTArabic-65Bold.ttf")  format('truetype'), /* Safari, Android, iOS */
+       url($font-path+"FrutigerLTArabic-65Bold.svg#svgFontName") format('svg'); /* Legacy iOS */
+
+       font-weight: 900;
 }
