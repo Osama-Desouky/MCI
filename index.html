@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" href="assets/css/custom.css"/>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="chat-icon">
+        <a href=""><img src="assets/images/chat_icon.svg" alt=""></a>
+    </div>
+    <!--Start TopBar-->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-6 col-xl-12">
+                    <ul class="list-inline right-bar d-flex align-items-center justify-content-xxl-start justify-content-center">
+                        <li class="list-inline-item">
+                            <img src="assets/images/calendar-dates.svg" alt=""><span class="ml-30"> الثلاثاء 17 شوال 1441 هـ</span>
+                            <img src="assets/images/clock.svg" alt=""><span>2:35 م</span>
+                        </li>
+                        <li class="list-inline-item"><img src="assets/images/weather.svg" alt=""><span>16 o</span></li>
+                        <li class="list-inline-item"><img src="assets/images/mosque.svg" alt=""><span>العصر : 2:45 م</span></li>
+                    </ul>
+                </div>
+                <div class="col-xxl-6 col-xl-12">
+                    <ul class="list-inline left-bar d-flex align-items-center justify-content-xxl-end justify-content-center">
+                        <li class="list-inline-item hide-mobile">
+                            <a href="" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="موقع الوزارة"><img src="assets/images/globe.svg" alt=""></a>
+                        </li>
+                        <li class="list-inline-item hide-mobile">
+                            <a href=""><img src="assets/images/phone-portrait-outline.svg" alt=""></a>
+                        </li>
+                        <li class="list-inline-item hide-mobile">
+                            <a href=""><img src="assets/images/twitter-outline.svg" alt=""></a>
+                        </li>
+                        <li class="list-inline-item to-hide-desktop">
+                        <button class="dropdown-toggle dotted-menu" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="profile-wrap"><img src="assets/images/dots.svg" alt=""></span>
+                        </button>
+                        <ul class="dropdown-menu brief-list list-unstyled" aria-labelledby="navbarDropdown">
+                            <li>
+                                <img src="assets/images/calendar-dates.svg" alt=""><span class="ml-30"> الثلاثاء 17 شوال 1441 هـ</span>
+                            </li>
+                            <li><img src="assets/images/weather.svg" alt=""><span>16 o</span></li>
+                            <li><img src="assets/images/mosque.svg" alt=""><span>العصر : 2:45 م</span></li>
+                            <li>
+                                <a href=""><img src="assets/images/globe.svg" alt=""><span>موقع الوزارة</span></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="assets/images/phone-portrait-outline.svg" alt=""><span>تطبيق الهواتف الذكية</span></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="assets/images/twitter-outline.svg" alt=""><span>الوزارة علي تويتر</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                        <li class="list-inline-item">
+                            <button class="dropdown-toggle profile position-relative" type="button" id="dropdownMenu1"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/images/notifications-outline.svg" alt=""><em class="badge badge-info">3</em>
+                            </button>
+                            <ul class="dropdown-menu brief-list list-unstyled" aria-labelledby="navbarDropdown">
+                                <li><a href="#">الملف الشخصي</a></li>
+                                <li><a href="#">الملف الشخصي</a></li>
+                                <li><a href="#">الملف الشخصي</a></li>
+                                <li><a href="#">تسجيل الخروج</a></li>
+                            </ul>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="">English</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <!--                            <a class="search" href="javascript:void(0)"><img src="assets/images/search.svg" alt=""></a>-->
+                            <!--                            <div class="togglesearch">-->
+                            <!--                                <input type="text" placeholder="" value=""/>-->
+                            <!--                                <input type="button" value="البحث"/>-->
+                            <!--                            </div>-->
+                            <div class="search-box-outer">
+                                <div class="dropdown">
+                                    <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                            src="assets/images/search.svg" alt=""></button>
+                                    <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                        <li class="panel-outer">
+                                            <div class="form-container">
+                                                <form method="post" action="blog.html">
+                                                    <div class="form-group">
+                                                        <input type="search" name="field-name" value=""
+                                                               placeholder="البحث" required>
+                                                        <button type="submit" class="search-btn"><span><img
+                                                                src="assets/images/search.svg" alt=""></span></button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <button class="dropdown-toggle profile" type="button" id="dropdownMenu4"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="profile-wrap"><img src="assets/images/man.jpg" alt=""></div>
+                                <span> عبد الله الدوسري </span>
+                            </button>
+                            <ul class="dropdown-menu brief-list list-unstyled" aria-labelledby="navbarDropdown">
+                                <li><a href="#">الملف الشخصي</a></li>
+                                <li><a href="#">الملف الشخصي</a></li>
+                                <li><a href="#">الملف الشخصي</a></li>
+                                <li><a href="#">تسجيل الخروج</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End TopBar -->
+
+    <!--Start Nav -->
+    <header class="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#mobile_nav" aria-controls="mobile_nav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="mobile_nav">
+                            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            </ul>
+                            <ul class="navbar-nav navbar-light">
+                                <li class="nav-item"><a class="nav-link" href="#"><img src="assets/images/home.svg"
+                                                                                       alt="الرئيسية"></a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">الإدارات</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">مكتبة المستندات</a></li>
+                                <li class="nav-item dmenu dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        الخدمات الالكترونية
+                                    </a>
+                                    <div class="dropdown-menu sm-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                        <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                        <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                        <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                        <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                        <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                    </div>
+                                </li>
+                                <!--========-->
+                                <li class="nav-item dropdown megamenu-li dmenu">
+                                    <a class="nav-link dropdown-toggle" href="" id="dropdown01"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">منتدى
+                                        التواصل</a>
+                                    <div class="dropdown-menu megamenu sm-menu border-top"
+                                         aria-labelledby="dropdown01">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                                <h6>عنصر فرعي</h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                                <h6>عنصر فرعي </h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                                <h6>عنصر فرعي</h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 mb-4">
+                                                <h6>عنصر فرعي</h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                                <h6>عنصر فرعي </h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                                <h6>عنصر فرعي </h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                                <h6>عنصر فرعي </h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 mb-4">
+                                                <h6>عنصر فرعي </h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--=========-->
+                                <li class="nav-item"><a class="nav-link" href="">المركز الإعلامي</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="">المكتبة القانونية</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="">الأدلة والإجراءات</a></li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End Nav-->
+    <!--Start Slider-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="swiper-container main-slider" dir="rtl">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img src="assets/images/slide-1.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img src="assets/images/slide-1.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img src="assets/images/slide-1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--End Slider -->
+
+    <!--Start Main Content -->
+    <main>
+        <!--Start Services Section -->
+        <div class="container">
+            <section class="services">
+                <div class="row">
+                    <!--Start Right Side Services -->
+                    <div class="col-xxl-8 col-xl-12">
+                        <div class="right-block">
+                            <div class="d-flex flex-lg-row flex-lg-nowrap justify-content-lg-between align-items-center justify-content-center flex-column flex-wrap">
+                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#first-set" role="tab" aria-controls="pills-home"
+                                           aria-selected="true">خدمات عامة</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#second-set" role="tab" aria-controls="pills-profile"
+                                           aria-selected="false">الخدمات الشخصية</a>
+                                    </li>
+                                </ul>
+                                <!--End Filter -->
+                            </div>
+
+
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="first-set" role="tabpanel" aria-labelledby="first-set-tab">
+
+                                    <ul class="nav filter nav-pills minus-top d-flex flex-lg-row flex-lg-nowrap align-items-center justify-content-lg-end justify-content-center flex-wrap" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="pills-use-tab" data-bs-toggle="pill" href="#filter-use"
+                                               role="tab" aria-controls="filter-use" aria-selected="true">الأكثر
+                                                إستخداما</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="filter-recent-tab" data-bs-toggle="pill"
+                                               href="#filter-recent" role="tab" aria-controls="filter-recent"
+                                               aria-selected="false">الأحدث</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="filter-favourite-tab" data-bs-toggle="pill"
+                                               href="#filter-favourite" role="tab" aria-controls="filter-favourite"
+                                               aria-selected="false">المفضلة</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="filter-use" role="tabpanel" aria-labelledby="filter-use-tab">
+
+                                            <div class="swiper-container services-slider" dir="rtl">
+                                                <div class="swiper-wrapper">
+                                                    <!-- Slides -->
+                                                    <div class="swiper-slide">
+                                                        <div class="text-center">
+                                                            <a href="">
+                                                                <img src="assets/images/finger-print.svg" alt="نظام حضوري">
+                                                                <span>نظام حضوري</span>
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="text-center">
+                                                            <a href="">
+                                                                <img src="assets/images/sahl.svg" alt="سهل للمعاملات">
+                                                                <span>سهل للمعاملات</span>
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="text-center">
+                                                            <a href="">
+                                                                <img src="assets/images/sms.svg" alt="نظام الرسائل القصيرة">
+                                                                <span>نظام الرسائل القصيرة</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="text-center">
+                                                            <a href="">
+                                                                <img src="assets/images/support.svg" alt="طلب دعم فني">
+                                                                <span>طلب دعم فني</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="text-center">
+                                                            <a href="">
+                                                                <img src="assets/images/finger-print.svg" alt="نظام الحضور">
+                                                                <span>نظام حضوري</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="text-center">
+                                                            <a href="">
+                                                                <img src="assets/images/finger-print.svg" alt="نظام الحضور">
+                                                                <span>نظام حضوري</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- pagination -->
+                                                <div class="swiper-pagination"></div>
+                                                <div class="read-more">
+                                                    <a href="#">
+                                                        <span> جميع الإعلانات</span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18.004"
+                                                             viewBox="0 0 18 18.004">
+                                                            <path id="arrow"
+                                                                  d="M1088.011,731.995a9,9,0,1,1,9,9A9.011,9.011,0,0,1,1088.011,731.995Zm1.042,0a7.957,7.957,0,1,0,7.958-7.959A7.968,7.968,0,0,0,1089.054,731.995Zm2.4.346,4.418-4.5.768.783-3.107,3.166h8.315V732.9h-8.315l3.107,3.165-.768.783Z"
+                                                                  transform="translate(-1088.011 -722.993)"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="filter-recent" role="tabpanel" aria-labelledby="filter-recent-tab">
+                                            filter recent tab 1
+                                        </div>
+                                        <div class="tab-pane fade" id="filter-favourite" role="tabpanel" aria-labelledby="filter-favourite-tab">
+                                            filter favourite tab 1
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="second-set" role="tabpanel" aria-labelledby="second-set-tab">
+                                    <ul class="nav filter nav-pills minus-top d-flex flex-lg-row flex-lg-nowrap align-items-center justify-content-lg-end justify-content-center flex-wrap" id="filter-tab2" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="pills-use-tab1" data-bs-toggle="pill" href="#filter-use1"
+                                               role="tab" aria-controls="filter-use" aria-selected="true">الأكثر إستخداما</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="filter-recent-tab2" data-bs-toggle="pill" href="#filter-recent1" role="tab" aria-controls="filter-recent"
+                                               aria-selected="false">الأحدث</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="filter-favourite-tab3" data-bs-toggle="pill" href="#filter-favourite1" role="tab" aria-controls="filter-favourite"
+                                               aria-selected="false">المفضلة</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="filter-use1" role="tabpanel" aria-labelledby="filter-use-tab">
+                                            filter use tab 2
+                                        </div>
+                                        <div class="tab-pane fade" id="filter-recent1" role="tabpanel" aria-labelledby="filter-recent-tab">
+                                            filter recent tab 2
+                                        </div>
+                                        <div class="tab-pane fade" id="filter-favourite1" role="tabpanel" aria-labelledby="filter-favourite-tab">
+                                            filter favourite 2
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Right Side Services -->
+                    <div class="col-xxl-4 col-xl-12">
+                        <div class="info-widget d-flex justify-content-center flex-wrap">
+                            <a href="" class="block holiday text-center text-white">
+                            <span>
+                                <img src="assets/images/calendar.svg" alt="رصيد أجازاتي">
+                            <span class="number">23</span>
+                            <span class="caption">رصيد أجازاتي</span>
+                            </span>
+
+                            </a>
+                            <a href="" class="block absence text-center text-white">
+                            <span>
+                                <img src="assets/images/table-clock.svg" alt="رصيد أجازاتي">
+                            <span class="number">23</span>
+                            <span class="caption">رصيد أجازاتي</span>
+                            </span>
+                            </a>
+                            <a href="" class="block orders text-center text-white">
+                            <span>
+                                <img src="assets/images/edit.svg" alt="رصيد أجازاتي">
+                            <span class="number">23</span>
+                            <span class="caption">رصيد أجازاتي</span>
+                            </span>
+                            </a>
+                            <a href="" class="block tasks text-center text-white">
+                           <span>
+                                <img src="assets/images/solid%20clipboard-check.svg" alt="رصيد أجازاتي">
+                            <span class="number">23</span>
+                            <span class="caption">رصيد أجازاتي</span>
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <div class="row card-columns" data-masonry='{"percentPosition": true }'>
+
+
+                <div class="grid-sizer col-lg-4 col-sm-12 gy-5"></div>
+
+                <!--Start Employee Guide -->
+                <div class="grid-item col-lg-4 col-sm-12 gy-5">
+                    <div class="card">
+                        <div class="portlet-header"><img src="assets/images/move.svg" alt=""></div>
+                        <div class="card-header">
+                            <div class="skew">
+                                <div class="skew-wrap bg-primary text-white">
+                                    <h2>دليل الموظفين</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <form class="employee-form" action="">
+                                <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                                    <option selected>فضلا إختر الإدارة</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <input type="text" class="form-control" aria-describedby="emailHelp"
+                                       placeholder="البحث عن الإسم">
+                                <div class="form-footer">
+                                    <span><img src="assets/images/regular%20address-book.svg"
+                                               alt=""> دليل الموظفين</span>
+                                    <button type="submit" class="btn btn-primary search-employee">بحث<img
+                                            src="assets/images/white-arrow.svg" alt=""></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--End Employee Guide -->
+
+                <!--Start news Block -->
+                <div class="grid-item col-lg-4 col-sm-12 gy-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="portlet-header"><img src="assets/images/move.svg" alt=""></div>
+                            <ul class="nav nav-pills news-tabs" id="news-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="general-news-tab" data-bs-toggle="pill"
+                                       href="#general-news" role="tab" aria-controls="general-news"
+                                       aria-selected="true">الأخبار</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="internal-news-tab" data-bs-toggle="pill"
+                                       href="#internal-news" role="tab" aria-controls="internal-news"
+                                       aria-selected="false">الأخبار الداخلية</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="news-tabContent">
+                                <div class="tab-pane fade show active" id="general-news" role="tabpanel"
+                                     aria-labelledby="general-news-tab">
+                                    <div class="swiper-container news-slider">
+                                        <div class="swiper-wrapper">
+                                            <!-- Slides -->
+                                            <div class="swiper-slide">
+                                                <div class="content">
+                                                    <img class="img-fluid intro-img" src="assets/images/news.svg"
+                                                         alt="...">
+                                                    <h3><a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض
+                                                        على العميل ليتصور طريقه وضع النصوص </a></h3>
+                                                    <div class="date-comments d-flex justify-content-between">
+                                                        <span><img src="assets/images/calendar-dots.svg" alt="">15 يونية 2020</span>
+                                                        <ul class="list-inline social-icons">
+                                                            <li class="list-inline-item comments">102<img
+                                                                    src="assets/images/regular%20comment-dots.svg"
+                                                                    alt="">
+                                                            </li>
+                                                            <li class="list-inline-item like">228<img
+                                                                    src="assets/images/regular%20thumbs-up.svg"
+                                                                    alt="">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="card-text">لوريم ايبسوم هو نموذج افتراضي يوضع في
+                                                        التصاميم لتعرض
+                                                        على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت
+                                                        تصاميم مطبوعه
+                                                        بروشور </p>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="content">
+                                                    <img class="img-fluid intro-img" src="assets/images/news.svg"
+                                                         alt="...">
+                                                    <h3><a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض
+                                                        على العميل ليتصور طريقه وضع النصوص </a></h3>
+                                                    <div class="date-comments d-flex justify-content-between">
+                                                        <span><img src="assets/images/calendar-dots.svg" alt="">15 يونية 2020</span>
+                                                        <ul class="list-inline social-icons">
+                                                            <li class="list-inline-item comments">102<img
+                                                                    src="assets/images/regular%20comment-dots.svg"
+                                                                    alt="">
+                                                            </li>
+                                                            <li class="list-inline-item like">228<img
+                                                                    src="assets/images/regular%20thumbs-up.svg"
+                                                                    alt="">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="card-text">لوريم ايبسوم هو نموذج افتراضي يوضع في
+                                                        التصاميم لتعرض
+                                                        على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت
+                                                        تصاميم مطبوعه
+                                                        بروشور </p>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="content">
+                                                    <img class="img-fluid intro-img" src="assets/images/news.svg"
+                                                         alt="...">
+                                                    <h3><a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض
+                                                        على العميل ليتصور طريقه وضع النصوص </a></h3>
+                                                    <div class="date-comments d-flex justify-content-between">
+                                                        <span><img src="assets/images/calendar-dots.svg" alt="">15 يونية 2020</span>
+                                                        <ul class="list-inline social-icons">
+                                                            <li class="list-inline-item comments">102<img
+                                                                    src="assets/images/regular%20comment-dots.svg"
+                                                                    alt="">
+                                                            </li>
+                                                            <li class="list-inline-item like">228<img
+                                                                    src="assets/images/regular%20thumbs-up.svg"
+                                                                    alt="">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="card-text">لوريم ايبسوم هو نموذج افتراضي يوضع في
+                                                        التصاميم لتعرض
+                                                        على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت
+                                                        تصاميم مطبوعه
+                                                        بروشور </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- pagination -->
+                                        <div class="swiper-pagination"></div>
+                                        <div class="read-more">
+                                            <a href="#"><span> عرض الكل</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18.004"
+                                                     viewBox="0 0 18 18.004">
+                                                    <path id="arrow"
+                                                          d="M1088.011,731.995a9,9,0,1,1,9,9A9.011,9.011,0,0,1,1088.011,731.995Zm1.042,0a7.957,7.957,0,1,0,7.958-7.959A7.968,7.968,0,0,0,1089.054,731.995Zm2.4.346,4.418-4.5.768.783-3.107,3.166h8.315V732.9h-8.315l3.107,3.165-.768.783Z"
+                                                          transform="translate(-1088.011 -722.993)"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="internal-news" role="tabpanel"
+                                     aria-labelledby="internal-news-tab">...
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!--End news Block -->
+
+                <!--Start Ads Block -->
+                <div class="grid-item col-lg-4 col-sm-12 gy-5">
+                    <div class="card">
+                        <div class="portlet-header"><img src="assets/images/move.svg" alt=""></div>
+                        <div class="card-header">
+                            <div class="skew">
+                                <div class="skew-wrap bg-anotherGreen text-white">
+                                    <h2>الإعلانات</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="swiper-container ads-slider">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <img class="img-fluid intro-img" src="assets/images/ad@2x.jpg" alt="">
+                                            <span><img src="assets/images/calendar-dots.svg" alt="">15 يونية 2020</span>
+                                            <p class="card-text">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم
+                                                لتعرض
+                                                على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه
+                                                بروشور </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <img class="img-fluid intro-img" src="assets/images/ad.jpg" alt="...">
+                                            <span><img src="assets/images/calendar-dots.svg"
+                                                       alt="">15 يونية 2020</span>
+                                            <p class="card-text">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم
+                                                لتعرض
+                                                على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه
+                                                بروشور </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <img class="img-fluid intro-img" src="assets/images/ad.jpg" alt="...">
+                                            <span><img src="assets/images/calendar-dots.svg"
+                                                       alt="">15 يونية 2020</span>
+                                            <p class="card-text">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم
+                                                لتعرض
+                                                على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه
+                                                بروشور </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- pagination -->
+                                <div class="swiper-pagination"></div>
+                                <div class="read-more">
+                                    <a href="#"><span> جميع الإعلانات</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18.004"
+                                             viewBox="0 0 18 18.004">
+                                            <path id="arrow"
+                                                  d="M1088.011,731.995a9,9,0,1,1,9,9A9.011,9.011,0,0,1,1088.011,731.995Zm1.042,0a7.957,7.957,0,1,0,7.958-7.959A7.968,7.968,0,0,0,1089.054,731.995Zm2.4.346,4.418-4.5.768.783-3.107,3.166h8.315V732.9h-8.315l3.107,3.165-.768.783Z"
+                                                  transform="translate(-1088.011 -722.993)"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Ads Block -->
+
+                <!--Start Docs Lib -->
+                <div class="grid-item col-lg-4 col-sm-12 gy-5">
+                    <div class="card">
+                        <div class="portlet-header"><img src="assets/images/move.svg" alt=""></div>
+                        <div class="card-header">
+                            <div class="skew">
+                                <div class="skew-wrap bg-anotherGreen text-white">
+                                    <h2>مكتبة المستندات</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="content docs">
+                                <h3><img src="assets/images/docs.svg" alt="">اسم الملف</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href=""><img src="assets/images/pdf.svg" alt="">...لوريم ايبسوم نموذج افتراضي
+                                        يوضع</a></li>
+                                    <li><a href=""><img src="assets/images/word.svg" alt="">...لوريم ايبسوم نموذج
+                                        افتراضي يوضع</a></li>
+                                    <li><a href=""><img src="assets/images/excel.svg" alt="">...لوريم ايبسوم نموذج
+                                        افتراضي يوضع</a></li>
+                                    <li><a href=""><img src="assets/images/word.svg" alt="">...لوريم ايبسوم نموذج
+                                        افتراضي يوضع</a></li>
+                                    <li><a href=""><img src="assets/images/excel.svg" alt="">...لوريم ايبسوم نموذج
+                                        افتراضي يوضع</a></li>
+                                    <li><a href=""><img src="assets/images/excel.svg" alt="">...لوريم ايبسوم نموذج
+                                        افتراضي يوضع</a></li>
+                                </ul>
+                            </div>
+                            <div class="read-more">
+                                <a href="#"><span>جميع المستندات</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18.004"
+                                         viewBox="0 0 18 18.004">
+                                        <path id="arrow"
+                                              d="M1088.011,731.995a9,9,0,1,1,9,9A9.011,9.011,0,0,1,1088.011,731.995Zm1.042,0a7.957,7.957,0,1,0,7.958-7.959A7.968,7.968,0,0,0,1089.054,731.995Zm2.4.346,4.418-4.5.768.783-3.107,3.166h8.315V732.9h-8.315l3.107,3.165-.768.783Z"
+                                              transform="translate(-1088.011 -722.993)"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End Docs Lib -->
+                <!--Start Journal File -->
+                <div class="grid-item col-lg-4 col-sm-12 gy-5">
+                    <div class="card">
+                        <div class="portlet-header"><img src="assets/images/move.svg" alt=""></div>
+                        <div class="card-header">
+                            <div class="skew">
+                                <div class="skew-wrap bg-primary text-white">
+                                    <h2>الملف الصحفي</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="swiper-container news-slider">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <h3><a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على
+                                                العميل
+                                                ليتصور طريقه وضع النصوص </a></h3>
+                                            <div class="date-comments d-flex flex-xl-nowrap justify-content-xl-between flex-wrap">
+                                                <span><img src="assets/images/riyadh.png" alt=""></span>
+                                                <span><img src="assets/images/calendar-dots.svg" alt=""> الإثنين 15 يونية 2020</span>
+                                            </div>
+                                            <p class="card-text">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم
+                                                لتعرض
+                                                على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه
+                                                بروشور </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <h3><a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على
+                                                العميل
+                                                ليتصور طريقه وضع النصوص </a></h3>
+                                            <div class="date-comments d-flex justify-content-between">
+                                                <span><img src="assets/images/riyadh.png" alt=""></span>
+                                                <span><img src="assets/images/calendar-dots.svg" alt=""> الإثنين 15 يونية 2020</span>
+                                            </div>
+                                            <p class="card-text">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم
+                                                لتعرض
+                                                على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه
+                                                بروشور </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <h3><a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على
+                                                العميل
+                                                ليتصور طريقه وضع النصوص </a></h3>
+                                            <div class="date-comments d-flex justify-content-between">
+                                                <span><img src="assets/images/riyadh.png" alt=""></span>
+                                                <span><img src="assets/images/calendar-dots.svg" alt=""> الإثنين 15 يونية 2020</span>
+                                            </div>
+                                            <p class="card-text">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم
+                                                لتعرض
+                                                على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه
+                                                بروشور </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- pagination -->
+                                <div class="swiper-pagination"></div>
+                                <div class="read-more">
+                                    <a href="#"><span> عرض الكل</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18.004"
+                                             viewBox="0 0 18 18.004">
+                                            <path id="arrow"
+                                                  d="M1088.011,731.995a9,9,0,1,1,9,9A9.011,9.011,0,0,1,1088.011,731.995Zm1.042,0a7.957,7.957,0,1,0,7.958-7.959A7.968,7.968,0,0,0,1089.054,731.995Zm2.4.346,4.418-4.5.768.783-3.107,3.166h8.315V732.9h-8.315l3.107,3.165-.768.783Z"
+                                                  transform="translate(-1088.011 -722.993)"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End Journal File -->
+                <!--Start Video Lib -->
+                <div class="grid-item col-lg-4 col-sm-12 gy-5">
+                    <div class="card">
+                        <div class="portlet-header"><img src="assets/images/move.svg" alt=""></div>
+                        <div class="card-header">
+                            <div class="skew">
+                                <div class="skew-wrap bg-anotherGreen text-white">
+                                    <h2>مكتبة الفيديو</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <div class="video">
+                                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/IsiduXqEVnQ"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                </div>
+                                <div class="date-comments d-flex justify-content-end">
+                                    <ul class="list-inline social-icons">
+                                        <li class="list-inline-item comments">102<img src="assets/images/eye.svg"
+                                                                                      alt="">
+                                        </li>
+                                        <li class="list-inline-item like">228<img
+                                                src="assets/images/regular%20thumbs-up.svg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="card-text">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم
+                                    لتعرض
+                                    على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه
+                                    بروشور </p>
+                            </div>
+                            <div class="read-more">
+                                <a href="#"><span>جميع الفيديوهات</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18.004"
+                                         viewBox="0 0 18 18.004">
+                                        <path id="arrow"
+                                              d="M1088.011,731.995a9,9,0,1,1,9,9A9.011,9.011,0,0,1,1088.011,731.995Zm1.042,0a7.957,7.957,0,1,0,7.958-7.959A7.968,7.968,0,0,0,1089.054,731.995Zm2.4.346,4.418-4.5.768.783-3.107,3.166h8.315V732.9h-8.315l3.107,3.165-.768.783Z"
+                                              transform="translate(-1088.011 -722.993)"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End Video Lib -->
+
+
+                <!--Start edarat -->
+                <div class="grid-item col-lg-4 col-sm-12 gy-5">
+                    <div class="card">
+                        <div class="portlet-header"><img src="assets/images/move.svg" alt=""></div>
+                        <div class="card-header">
+                            <div class="skew">
+                                <div class="skew-wrap bg-primary text-white">
+                                    <h2>الإدارات</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="content montada edarat">
+                                <div class="scrollbar">
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/groups.svg" alt=""></span>
+                                        <div class="l-montada flex-fill">
+                                            <a href="">إدارة شئون الموظفين</a>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/groups.svg" alt=""></span>
+                                        <div class="l-montada flex-fill">
+                                            <a href="">إدارة شئون الموظفين</a>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/groups.svg" alt=""></span>
+                                        <div class="l-montada flex-fill">
+                                            <a href="">إدارة شئون الموظفين</a>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/groups.svg" alt=""></span>
+                                        <div class="l-montada flex-fill">
+                                            <a href="">إدارة شئون الموظفين</a>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/groups.svg" alt=""></span>
+                                        <div class="l-montada flex-fill">
+                                            <a href="">إدارة شئون الموظفين</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="read-more">
+                                <a href="#"><span>عرض الكل</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18.004"
+                                         viewBox="0 0 18 18.004">
+                                        <path id="arrow"
+                                              d="M1088.011,731.995a9,9,0,1,1,9,9A9.011,9.011,0,0,1,1088.011,731.995Zm1.042,0a7.957,7.957,0,1,0,7.958-7.959A7.968,7.968,0,0,0,1089.054,731.995Zm2.4.346,4.418-4.5.768.783-3.107,3.166h8.315V732.9h-8.315l3.107,3.165-.768.783Z"
+                                              transform="translate(-1088.011 -722.993)"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End edarat -->
+
+
+                <!--Start montada Lib -->
+                <div class="grid-item col-lg-4 col-sm-12 gy-5">
+                    <div class="card">
+                        <div class="portlet-header"><img src="assets/images/move.svg" alt=""></div>
+                        <div class="card-header">
+                            <div class="skew">
+                                <div class="skew-wrap bg-primary text-white">
+                                    <h2>منتدي التواصل</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="content montada">
+                                <div class="scrollbar">
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/white-comment.svg" alt=""></span>
+                                        <div class="l-montada">
+                                            <a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل
+                                                ليتصور طريقه </a>
+                                            <div class="date-comments d-flex justify-content-end">
+                                                <ul class="list-inline social-icons">
+                                                    <li class="list-inline-item comments">102<img
+                                                            src="assets/images/eye.svg"
+                                                            alt="">
+                                                    </li>
+                                                    <li class="list-inline-item like">228<img
+                                                            src="assets/images/regular%20thumbs-up.svg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/white-comment.svg" alt=""></span>
+                                        <div class="l-montada">
+                                            <a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل
+                                                ليتصور طريقه </a>
+                                            <div class="date-comments d-flex justify-content-end">
+                                                <ul class="list-inline social-icons">
+                                                    <li class="list-inline-item comments">102<img
+                                                            src="assets/images/eye.svg"
+                                                            alt="">
+                                                    </li>
+                                                    <li class="list-inline-item like">228<img
+                                                            src="assets/images/regular%20thumbs-up.svg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/white-comment.svg" alt=""></span>
+                                        <div class="l-montada">
+                                            <a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل
+                                                ليتصور طريقه </a>
+                                            <div class="date-comments d-flex justify-content-end">
+                                                <ul class="list-inline social-icons">
+                                                    <li class="list-inline-item comments">102<img
+                                                            src="assets/images/eye.svg"
+                                                            alt="">
+                                                    </li>
+                                                    <li class="list-inline-item like">228<img
+                                                            src="assets/images/regular%20thumbs-up.svg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/white-comment.svg" alt=""></span>
+                                        <div class="l-montada">
+                                            <a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل
+                                                ليتصور طريقه </a>
+                                            <div class="date-comments d-flex justify-content-end">
+                                                <ul class="list-inline social-icons">
+                                                    <li class="list-inline-item comments">102<img
+                                                            src="assets/images/eye.svg"
+                                                            alt="">
+                                                    </li>
+                                                    <li class="list-inline-item like">228<img
+                                                            src="assets/images/regular%20thumbs-up.svg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/white-comment.svg" alt=""></span>
+                                        <div class="l-montada">
+                                            <a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل
+                                                ليتصور طريقه </a>
+                                            <div class="date-comments d-flex justify-content-end">
+                                                <ul class="list-inline social-icons">
+                                                    <li class="list-inline-item comments">102<img
+                                                            src="assets/images/eye.svg"
+                                                            alt="">
+                                                    </li>
+                                                    <li class="list-inline-item like">228<img
+                                                            src="assets/images/regular%20thumbs-up.svg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/white-comment.svg" alt=""></span>
+                                        <div class="l-montada">
+                                            <a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل
+                                                ليتصور طريقه </a>
+                                            <div class="date-comments d-flex justify-content-end">
+                                                <ul class="list-inline social-icons">
+                                                    <li class="list-inline-item comments">102<img
+                                                            src="assets/images/eye.svg"
+                                                            alt="">
+                                                    </li>
+                                                    <li class="list-inline-item like">228<img
+                                                            src="assets/images/regular%20thumbs-up.svg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="read-more">
+                                <a href="#"><span>عرض الكل</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18.004"
+                                         viewBox="0 0 18 18.004">
+                                        <path id="arrow"
+                                              d="M1088.011,731.995a9,9,0,1,1,9,9A9.011,9.011,0,0,1,1088.011,731.995Zm1.042,0a7.957,7.957,0,1,0,7.958-7.959A7.968,7.968,0,0,0,1089.054,731.995Zm2.4.346,4.418-4.5.768.783-3.107,3.166h8.315V732.9h-8.315l3.107,3.165-.768.783Z"
+                                              transform="translate(-1088.011 -722.993)"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End montada Lib -->
+                <!--Start album Lib -->
+                <div class="grid-item col-lg-4 col-sm-12 gy-5">
+                    <div class="card">
+                        <div class="portlet-header"><img src="assets/images/move.svg" alt=""></div>
+                        <div class="card-header">
+                            <div class="skew">
+                                <div class="skew-wrap bg-primary text-white">
+                                    <h2>ألبومات الصور</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <img src="assets/images/album.png" alt="" class="img-fluid intro-img">
+                                <div class="date-comments d-flex justify-content-end">
+                                    <ul class="list-inline social-icons">
+                                        <li class="list-inline-item comments">102<img src="assets/images/eye.svg"
+                                                                                      alt="">
+                                        </li>
+                                        <li class="list-inline-item like">228<img
+                                                src="assets/images/regular%20thumbs-up.svg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="card-text">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم
+                                    لتعرض
+                                    على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه
+                                    بروشور </p>
+                            </div>
+                            <div class="read-more">
+                                <a href="#"><span>جميع الألبومات</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18.004"
+                                         viewBox="0 0 18 18.004">
+                                        <path id="arrow"
+                                              d="M1088.011,731.995a9,9,0,1,1,9,9A9.011,9.011,0,0,1,1088.011,731.995Zm1.042,0a7.957,7.957,0,1,0,7.958-7.959A7.968,7.968,0,0,0,1089.054,731.995Zm2.4.346,4.418-4.5.768.783-3.107,3.166h8.315V732.9h-8.315l3.107,3.165-.768.783Z"
+                                              transform="translate(-1088.011 -722.993)"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End album Lib -->
+
+
+                <!--Start estibyan -->
+                <div class="grid-item col-lg-4 col-sm-12 gy-5">
+                    <div class="card">
+                        <div class="portlet-header"><img src="assets/images/move.svg" alt=""></div>
+                        <div class="card-header">
+                            <div class="skew">
+                                <div class="skew-wrap bg-primary text-white">
+                                    <h2>الإستبيانات</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="content montada estibyan">
+                                <div class="scrollbar">
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/poll.svg" alt=""></span>
+                                        <div class="l-montada">
+                                            <a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل
+                                                ليتصور طريقه </a>
+                                            <div class="date-comments d-flex justify-content-end">
+                                                <ul class="list-inline social-icons">
+                                                    <li class="list-inline-item comments"> عدد الأصوات - 85<img
+                                                            src="assets/images/bx-user.svg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/poll.svg" alt=""></span>
+                                        <div class="l-montada">
+                                            <a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل
+                                                ليتصور طريقه </a>
+                                            <div class="date-comments d-flex justify-content-end">
+                                                <ul class="list-inline social-icons">
+                                                    <li class="list-inline-item comments"> عدد الأصوات - 85<img
+                                                            src="assets/images/bx-user.svg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/poll.svg" alt=""></span>
+                                        <div class="l-montada">
+                                            <a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل
+                                                ليتصور طريقه </a>
+                                            <div class="date-comments d-flex justify-content-end">
+                                                <ul class="list-inline social-icons">
+                                                    <li class="list-inline-item comments"> عدد الأصوات - 85<img
+                                                            src="assets/images/bx-user.svg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/poll.svg" alt=""></span>
+                                        <div class="l-montada">
+                                            <a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل
+                                                ليتصور طريقه </a>
+                                            <div class="date-comments d-flex justify-content-end">
+                                                <ul class="list-inline social-icons">
+                                                    <li class="list-inline-item comments"> عدد الأصوات - 85<img
+                                                            src="assets/images/bx-user.svg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/poll.svg" alt=""></span>
+                                        <div class="l-montada">
+                                            <a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل
+                                                ليتصور طريقه </a>
+                                            <div class="date-comments d-flex justify-content-end">
+                                                <ul class="list-inline social-icons">
+                                                    <li class="list-inline-item comments"> عدد الأصوات - 85<img
+                                                            src="assets/images/bx-user.svg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <span><img src="assets/images/poll.svg" alt=""></span>
+                                        <div class="l-montada">
+                                            <a href="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل
+                                                ليتصور طريقه </a>
+                                            <div class="date-comments d-flex justify-content-end">
+                                                <ul class="list-inline social-icons">
+                                                    <li class="list-inline-item comments"> عدد الأصوات - 85<img
+                                                            src="assets/images/bx-user.svg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="read-more">
+                                <a href="#"><span>عرض الكل</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18.004"
+                                         viewBox="0 0 18 18.004">
+                                        <path id="arrow"
+                                              d="M1088.011,731.995a9,9,0,1,1,9,9A9.011,9.011,0,0,1,1088.011,731.995Zm1.042,0a7.957,7.957,0,1,0,7.958-7.959A7.968,7.968,0,0,0,1089.054,731.995Zm2.4.346,4.418-4.5.768.783-3.107,3.166h8.315V732.9h-8.315l3.107,3.165-.768.783Z"
+                                              transform="translate(-1088.011 -722.993)"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End estibyan -->
+
+                <!--Start new employee Lib -->
+                <div class="grid-item col-lg-4 col-sm-12 gy-5">
+                    <div class="card">
+                        <div class="portlet-header"><img src="assets/images/move.svg" alt=""></div>
+                        <div class="card-header">
+                            <div class="skew">
+                                <div class="skew-wrap bg-primary text-white">
+                                    <h2>الموظفين الجدد</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="swiper-container new-employees">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="content text-center">
+                                            <div class="img-wrapper">
+                                                <img src="assets/images/person.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <p class="card-text">
+                                                <span class="name">حمد عبدالله المطيري</span>
+                                                <span class="job">إدارة تقنية المعلومات</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content text-center">
+                                            <div class="img-wrapper">
+                                                <img src="assets/images/person.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <p class="card-text">
+                                                <span class="name">حمد عبدالله المطيري</span>
+                                                <span class="job">إدارة تقنية المعلومات</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content text-center">
+                                            <div class="img-wrapper">
+                                                <img src="assets/images/person.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <p class="card-text">
+                                                <span class="name">حمد عبدالله المطيري</span>
+                                                <span class="job">إدارة تقنية المعلومات</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- pagination -->
+                                <div class="swiper-pagination"></div>
+                                <div class="read-more">
+                                    <a href="#"><span>عرض الكل</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18.004"
+                                             viewBox="0 0 18 18.004">
+                                            <path id="arrow"
+                                                  d="M1088.011,731.995a9,9,0,1,1,9,9A9.011,9.011,0,0,1,1088.011,731.995Zm1.042,0a7.957,7.957,0,1,0,7.958-7.959A7.968,7.968,0,0,0,1089.054,731.995Zm2.4.346,4.418-4.5.768.783-3.107,3.166h8.315V732.9h-8.315l3.107,3.165-.768.783Z"
+                                                  transform="translate(-1088.011 -722.993)"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--End mazayz Lib -->
+                <!--Start mazaya Lib -->
+                <div class="grid-item col-lg-4 col-sm-12 gy-5">
+                    <div class="card">
+                        <div class="portlet-header"><img src="assets/images/move.svg" alt=""></div>
+                        <div class="card-header">
+                            <div class="skew">
+                                <div class="skew-wrap bg-anotherGreen text-white">
+                                    <h2>مزايا الموظفين</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="swiper-container mazaya-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="content mazaya">
+                                            <img src="assets/images/mazayz.png" alt="" class="img-fluid intro-img">
+                                            <div class="date-comments d-flex justify-content-between align-items-center">
+                                                <span>منتجع عمارية اكوا بارك</span>
+                                                <span class="badge badge-orange">40% خصم</span>
+                                            </div>
+                                            <p class="red-text">متبقى 87 يوم</p>
+                                            <p class="card-text">للحجز والتواصل على الارقام : 0535965000 والرقم :
+                                                0530629000</p>
+                                            <div class="text-center">
+                                                <button class="btn btn-primary offers" type="submit">
+                                                    <span>سجل بالعرض</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="content mazaya">
+                                            <img src="assets/images/mazayz.png" alt="" class="img-fluid intro-img">
+                                            <div class="date-comments d-flex justify-content-between align-items-center">
+                                                <span>منتجع عمارية اكوا بارك</span>
+                                                <span class="badge badge-orange">40% خصم</span>
+                                            </div>
+                                            <p class="red-text">متبقى 87 يوم</p>
+                                            <p class="card-text">للحجز والتواصل على الارقام : 0535965000 والرقم :
+                                                0530629000</p>
+                                            <div class="text-center">
+                                                <button class="btn btn-primary offers" type="submit">
+                                                    <span>سجل بالعرض</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="content mazaya">
+                                            <img src="assets/images/mazayz.png" alt="" class="img-fluid intro-img">
+                                            <div class="date-comments d-flex justify-content-between align-items-center">
+                                                <span>منتجع عمارية اكوا بارك</span>
+                                                <span class="badge badge-orange">40% خصم</span>
+                                            </div>
+                                            <p class="red-text">متبقى 87 يوم</p>
+                                            <p class="card-text">للحجز والتواصل على الارقام : 0535965000 والرقم :
+                                                0530629000</p>
+                                            <div class="text-center">
+                                                <button class="btn btn-primary offers" type="submit">
+                                                    <span>سجل بالعرض</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- pagination -->
+                                <div class="swiper-pagination"></div>
+                                <div class="read-more">
+                                    <a href="#"><span>عرض الكل</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18.004"
+                                             viewBox="0 0 18 18.004">
+                                            <path id="arrow"
+                                                  d="M1088.011,731.995a9,9,0,1,1,9,9A9.011,9.011,0,0,1,1088.011,731.995Zm1.042,0a7.957,7.957,0,1,0,7.958-7.959A7.968,7.968,0,0,0,1089.054,731.995Zm2.4.346,4.418-4.5.768.783-3.107,3.166h8.315V732.9h-8.315l3.107,3.165-.768.783Z"
+                                                  transform="translate(-1088.011 -722.993)"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--End mazayz Lib -->
+
+            </div><!--End Row -->
+        </div><!--End Container -->
+    </main>
+
+    <!--End Main Content-->
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-footer d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center  align-items-center">
+                    <div class="right-footer d-flex justify-content-between align-items-center">
+                        <div class="copy">
+                            <p>جميع الحقوق محفوظة , وزارة التجارة © 2020</p>
+                        </div>
+                        <div class="social">
+                            <ul class="list-inline footer-social">
+                                <li class="list-inline-item"><a href="javascript:void(0)"> mcgovsa </a> <br>
+                                    <a class="mc" href="javascript:void(0)"> www.mc.gov.sa </a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)">
+                                    <img src="assets/images/youtube.svg" alt=""/>
+                                </a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)">
+                                    <img src="assets/images/instagram.svg" alt=""/>
+                                </a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)">
+                                    <img src="assets/images/facebook-square.svg" alt=""/>
+                                </a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)">
+                                    <img src="assets/images/twitter.svg" alt=""/>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="left-footer d-flex justify-content-between align-items-center">
+                        <div class="logos">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="">خريطة الموقع</a></li>
+                                <li class="list-inline-item"><a href="">سياسة الخصوصية</a></li>
+                                <li class="list-inline-item"><a href="">شروط الإستخدام</a></li>
+                                <li class="list-inline-item"><a href="">السياسات الداخلية</a></li>
+                                <li class="list-inline-item"><img src="assets/images/roeya.svg" alt=""/></li>
+                                <li class="list-inline-item"><img src="assets/images/tegara.svg" alt=""/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="logos show-mobile text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><img src="assets/images/roeya.svg" alt=""/></li>
+                            <li class="list-inline-item"><img src="assets/images/tegara.svg" alt=""/></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- jQuery -->
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/packery.pkgd.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<!--<script src="assets/js/masonry.pkgd.min.js"></script>-->
+<!--<script src="assets/js/draggabilly.pkgd.min.js"></script>-->
+
+
+<script src="assets/js/custom.js"></script>
+
+<!--Swiper Slider -->
+<!--<script src="assets/js/packery.pkgd.min.js"></script>-->
+
+
+</body>
+
+</html>

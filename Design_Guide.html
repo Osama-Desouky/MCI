@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css"/>
+
+</head>
+
+<body>
+<div class="container-fluid">
+    <!--Start TopBar-->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-6 col-xl-12">
+                    <ul class="list-inline right-bar d-flex align-items-center justify-content-xxl-start justify-content-center">
+                        <li class="list-inline-item">
+                            <img src="assets/images/calendar-dates.svg" alt=""><span class="ml-30"> الثلاثاء 17 شوال 1441 هـ</span>
+                            <img src="assets/images/clock.svg" alt=""><span>2:35 م</span>
+                        </li>
+                        <li class="list-inline-item"><img src="assets/images/weather.svg" alt=""><span>16 o</span></li>
+                        <li class="list-inline-item"><img src="assets/images/mosque.svg"
+                                                          alt=""><span>العصر : 2:45 م</span></li>
+                    </ul>
+                </div>
+                <div class="col-xxl-6 col-xl-12">
+                    <ul class="list-inline left-bar d-flex align-items-center justify-content-xxl-end justify-content-center">
+                        <li class="list-inline-item">
+                            <a href="" type="button" data-bs-toggle="tooltip" data-bs-placement="left"
+                               title="موقع الوزارة"><img src="assets/images/globe.svg" alt=""></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href=""><img src="assets/images/phone-portrait-outline.svg" alt=""></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href=""><img src="assets/images/twitter-outline.svg" alt=""></a>
+                        </li>
+                        <li class="list-inline-item">
+              <span class="position-relative">
+                <a href=""><img src="assets/images/notifications-outline.svg" alt=""></a>
+                 <em class="badge badge-info">3</em>
+              </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="">English</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <!--                            <a class="search" href="javascript:void(0)"><img src="assets/images/search.svg" alt=""></a>-->
+                            <!--                            <div class="togglesearch">-->
+                            <!--                                <input type="text" placeholder="" value=""/>-->
+                            <!--                                <input type="button" value="البحث"/>-->
+                            <!--                            </div>-->
+                            <div class="search-box-outer">
+                                <div class="dropdown">
+                                    <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                            src="assets/images/search.svg" alt=""></button>
+                                    <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                        <li class="panel-outer">
+                                            <div class="form-container">
+                                                <form method="post" action="blog.html">
+                                                    <div class="form-group">
+                                                        <input type="search" name="field-name" value=""
+                                                               placeholder="البحث" required>
+                                                        <button type="submit" class="search-btn"><span><img
+                                                                src="assets/images/search.svg" alt=""></span></button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <button class="dropdown-toggle profile" type="button" id="dropdownMenu4"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="profile-wrap"><img src="assets/images/man.jpg" alt=""></div>
+                                <span> عبد الله الدوسري </span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">الملف الشخصي</a></li>
+                                <li><a class="dropdown-item" href="#">الملف الشخصي</a></li>
+                                <li><a class="dropdown-item" href="#">الملف الشخصي</a></li>
+                                <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End TopBar -->
+
+    <!--Start Nav -->
+    <header class="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#mobile_nav" aria-controls="mobile_nav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="mobile_nav">
+                            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            </ul>
+                            <ul class="navbar-nav navbar-light">
+                                <li class="nav-item"><a class="nav-link" href="#"><img src="assets/images/home.svg"
+                                                                                       alt="الرئيسية"></a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">الإدارات</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">مكتبة المستندات</a></li>
+                                <li class="nav-item dmenu dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        الخدمات الالكترونية
+                                    </a>
+                                    <div class="dropdown-menu sm-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                        <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                        <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                        <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                        <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                        <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                    </div>
+                                </li>
+                                <!--========-->
+                                <li class="nav-item dropdown megamenu-li dmenu">
+                                    <a class="nav-link dropdown-toggle" href="" id="dropdown01"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">منتدى
+                                        التواصل</a>
+                                    <div class="dropdown-menu megamenu sm-menu border-top"
+                                         aria-labelledby="dropdown01">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                                <h6>عنصر فرعي</h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                                <h6>عنصر فرعي </h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                                <h6>عنصر فرعي</h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 mb-4">
+                                                <h6>عنصر فرعي</h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                                <h6>عنصر فرعي </h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                                <h6>عنصر فرعي </h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                                <h6>عنصر فرعي </h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3 mb-4">
+                                                <h6>عنصر فرعي </h6>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                                <a class="dropdown-item" href="#">عنصر فرعي</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--=========-->
+                                <li class="nav-item"><a class="nav-link" href="">المركز الإعلامي</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="">المكتبة القانونية</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="">الأدلة والإجراءات</a></li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End Nav-->
+    <!--Start Slider-->
+    <div class="breadcrumb-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Breadcrumb-->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+                            <li class="breadcrumb-item"><a href="#">الخدمات الإلكترونية</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">نظام الرسائل القصيرة</li>
+                        </ol>
+                    </nav>
+                    <!--End BreadCrumb -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content">
+                        <div class="top-skew d-flex justify-content-between">
+                            <div class="skew">
+                                <div class="skew-wrap bg-orange text-white">
+                                    <h2>222عناصر التصميم</h2>
+                                </div>
+                            </div>
+
+                            <div class="skew">
+                                <div class="skew-wrap skew-reverse bg-primary text-white">
+                                    <h2>عناصر التصميم</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="titles">
+                            <div class="skew underlined">
+                                <div class="skew-wrap bg-primary text-white">
+                                    <h2>عناصر التصميم</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Circle and Heading -->
+                        <div class="circles d-flex justify-content-between align-items-center">
+                            <h1>نمط عنوان صفحة</h1>
+                            <div class="circles-types">
+                                <div class="circle bg-green">T</div>
+                                <div class="circle bg-orange">T</div>
+                                <div class="circle bg-primary">T</div>
+                                <div class="circle bg-blue">T</div>
+                                <div class="circle bg-midGray">T</div>
+                            </div>
+                        </div>
+                        <!--End Circles and Heading -->
+
+                        <!-- Head Titles-->
+                        <div class="head-titles d-flex justify-content-start align-items-center">
+                            <h2 class="text-lighterGreen">عنوان مقال</h2>
+                            <h2 class="text-orange">عنوان مقال</h2>
+                            <h2 class="text-primary">عنوان مقال</h2>
+                            <h2 class="text-midGray">عنوان مقال</h2>
+                            <p class="bold-text text-midGray">نص عريض للمحتوى</p>
+                            <p class="regular-text">نص عريض للمحتوى</p>
+                        </div>
+                        <!--End Head Titles -->
+
+                        <!--Start BlockQuote -->
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <blockquote class="blockquote">
+                                    <p class="text-center">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض
+                                        لوريم ايبسوم هو نموذج افتراضي</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <!--End BlockQuote -->
+
+                        <!--Start Dates -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="calendar">
+                                    <div><span class="calendar-img bg-primary d-inline-block"></span> <span
+                                            class="text-primary d-inline-block">25/12/2020 م</span></div>
+                                    <div><span class="calendar-img bg-orange d-inline-block"></span> <span
+                                            class="text-orange d-inline-block">25/12/2020 م</span></div>
+                                    <div><span class="calendar-img bg-muted d-inline-block"></span> <span
+                                            class="text-muted d-inline-block">25/12/2020 م</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Dates -->
+
+                        <!--paragraph -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="text">
+                                    <div class="image-wrapper">
+                                        <img class="img-fluid" src="assets/images/image.png" alt="">
+                                    </div>
+                                    <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه
+                                        وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل
+                                        المثال ... او نماذج مواقع انترنت ... وعند موافقه العميل المبدئيه على التصميم
+                                        يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                        ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير
+                                        من الملاحظات او الانتقادات للتصميم الاساسي.</p>
+                                    <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه
+                                        وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل
+                                        المثال ... او نماذج مواقع انترنت ... وعند موافقه العميل المبدئيه على التصميم
+                                        يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                        ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير
+                                        من الملاحظات او الانتقادات للتصميم الاساسي.
+                                        وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل
+                                        المثال ... او نماذج مواقع انترنت ... وعند موافقه العميل المبدئيه على التصميم
+                                        يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                        ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير
+                                        من الملاحظات او الانتقادات للتصميم الاساسي. لوريم ايبسوم هو نموذج افتراضي يوضع
+                                        في التصاميم لتعرض على العميل ليتصور طريقه
+                                        وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل
+                                        المثال ... او نماذج مواقع انترنت ... وعند موافقه العميل</p>
+                                    <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه
+                                        وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل
+                                        المثال ... او نماذج مواقع انترنت ... وعند موافقه العميل المبدئيه على التصميم
+                                        يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                        ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير
+                                        من الملاحظات او الانتقادات للتصميم الاساسي.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Paragraph -->
+
+                        <!--Start Values -->
+                        <div class="values">
+                            <h3 class="text-lighterGreen">قيمنا ...</h3>
+                            <h3 class="text-orange">قيمنا ...</h3>
+                            <h3 class="text-blue">قيمنا ...</h3>
+                            <h3 class="text-primary">قيمنا ...</h3>
+                            <h3 class="text-midGray">قيمنا ...</h3>
+                        </div>
+                        <!--End Values -->
+
+                        <!--Right Border -->
+                        <div class="borders">
+                            <p class="text-midGray right-border green">العدالة - الشفافية - الكفاءة - المسؤولية -
+                                التعاون - الريادة</p>
+                            <p class="text-midGray right-border orange">العدالة - الشفافية - الكفاءة - المسؤولية -
+                                التعاون - الريادة</p>
+                            <p class="text-midGray right-border blue">العدالة - الشفافية - الكفاءة - المسؤولية - التعاون
+                                - الريادة</p>
+                            <p class="text-midGray right-border lightGreen">العدالة - الشفافية - الكفاءة - المسؤولية -
+                                التعاون - الريادة</p>
+                        </div>
+                        <!--End Right Border -->
+
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <!--unstyled list -->
+                                <div class="unordered-list">
+                                    <h2>قائمة منقوطة</h2>
+                                    <ul class="dotted-list">
+                                        <li>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور
+                                            طريقه
+                                        </li>
+                                        <li>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور
+                                            طريقه
+                                        </li>
+                                        <li>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور
+                                            طريقه
+                                        </li>
+                                        <li>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور
+                                            طريقه
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--End Unstyled List -->
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <!--ordered list -->
+                                <div class="styled-list">
+                                    <h2>قائمة عددية</h2>
+                                    <ol class="numbered-list">
+                                        <li>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور
+                                            طريقه
+                                        </li>
+                                        <li>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور
+                                            طريقه
+                                        </li>
+                                        <li>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور
+                                            طريقه
+                                        </li>
+                                        <li>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور
+                                            طريقه
+                                        </li>
+                                    </ol>
+                                </div>
+                                <!--End ordered List -->
+                            </div>
+                        </div>
+
+
+                        <!--Start Elements -->
+                        <div class="skew underlined">
+                            <div class="skew-wrap bg-blue text-white">
+                                <h2>عناصر النماذج</h2>
+                            </div>
+                        </div>
+
+
+                        <form class="search-by-date bg-white d-flex flex-xl-row align-items-xl-center flex-xl-nowrap flex-column flex-wrap justify-content-xl-between align-items-start justify-content-start flex-wrap"
+                              action="">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <label class="col-form-label form-label">إبحث عن عنصر بالتاريخ</label>
+                                    <input type="text" class="form-control datepicker" value="من" id="from">
+                                    <input type="text" class="form-control datepicker" value="إلي" id="to">
+                                    <button type="submit" class="btn btn-primary">بحث<img
+                                            src="assets/images/white-arrow.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <label for="orderby" class="col-form-label form-label">ترتيب حسب</label>
+                                    <select class="form-select" id="orderby">
+                                        <option selected>الأحدث</option>
+                                        <option value="1">الأحدث</option>
+                                        <option value="2">الأحدث</option>
+                                        <option value="3">الأحدث</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+
+
+                        <div class="row">
+                            <div class="col-lg-4 col-12">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="choices" class="col-form-label form-label required">عنوان حقل
+                                            إختيار </label>
+                                        <select class="form-select" id="group">
+                                            <option selected>فضلا حدد إختيار</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="input2" class="col-form-label form-label required">عنوان حقل
+                                            نصي </label>
+                                        <div class="input-group info-tip">
+                                            <span class="input-group-text bg-transparent" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="assets/images/input-info.svg" alt=""> </span>
+                                            <input type="text" class="form-control new-input" value="فضلا أدخل اسمك الرباعي" id="input2">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="newDate" class="col-form-label form-label required">عنوان حقل
+                                            تاريخ </label>
+                                        <input type="text" class="form-control new-input datepicker icon"
+                                               value="فضلا حدد التاريخ" id="newDate">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <form action="">
+                            <div class="form-group">
+                                <label for="choices" class="col-sm-2 col-form-label form-label required">عنوان حقل
+                                    إختيار متعدد</label>
+                                <div id="choices" class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="yes" value="option1">
+                                    <label class="form-check-label" for="yes">نعم</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="no" value="option2">
+                                    <label class="form-check-label" for="no">لا</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="yes" value="option1">
+                                    <label class="form-check-label" for="yes">نعم</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="no" value="option2">
+                                    <label class="form-check-label" for="no">لا</label>
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="">
+                            <div class="form-group">
+                                <label for="radios" class="col-sm-2 col-form-label form-label required">عنوان حقل إختيار
+                                    فردي</label>
+                                <div class="form-check form-check-inline" id="radios">
+                                    <input class="form-check-input" type="radio" id="radio1" value="option1"
+                                           name="radio1">
+                                    <label class="form-check-label" for="radio1">هوية وطنية</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="radio2" value="option2"
+                                           name="radio1">
+                                    <label class="form-check-label" for="radio2">إقامة / هوية مقيم</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="radio3" value="option1"
+                                           name="radio1">
+                                    <label class="form-check-label" for="radio3">جواز سفر</label>
+                                </div>
+                            </div>
+                        </form>
+
+
+                        <form action="">
+                            <div class="form-group">
+                                <label for="sliderRange" class="col-sm-2 col-form-label form-label required">عنوان حقل
+                                    تحديد قيمة</label>
+                                <div class="slider-range" id="sliderRange">
+                                    <!--                                        <input type="range" class="form-range" id="customRange1">-->
+                                    <div id="custom-handle" class="ui-slider-handle"></div>
+                                    <p>
+                                        <label for="amount">القيمة</label>
+                                        <input type="text" id="amount" readonly>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="" class="upload-area">
+                            <div class="input-group">
+                                <div class="fileUpload bg-blue">
+                                    <span><img src="assets/images/upload.svg" alt="">إرفاق ملف </span>
+                                    <input type="file" class="upload"/>
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="">
+                            <div class="form-group">
+                                <label for="textarea1" class="form-label">عنوان حقل نصي متعدد الأسطر<em>*</em></label>
+                                <textarea id="textarea1" class="form-control input textarea"
+                                          placeholder="فضلا أدخل الرسالة"></textarea>
+
+                                <div id="phoneHelpBlock" class="form-text">
+                                    نمط نص مساعد للحقول *
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="buttons">
+                            <button type="submit" class="btn btn-orange">إلغاء<img src="assets/images/cancel.svg"
+                                                                                   alt=""></button>
+                            <button type="submit" class="btn btn-blue">زر أزرق</button>
+                            <button type="submit" class="btn btn-primary">إرسال<img src="assets/images/white-arrow.svg"
+                                                                                    alt=""></button>
+                        </div>
+
+                        <div class="skew underlined">
+                            <div class="skew-wrap bg-anotherGreen text-white">
+                                <h2>عناصر المحتوي</h2>
+                            </div>
+                        </div>
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                        عنوان تبويب مغلق
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه
+                                            وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل
+                                            المثال ... او نماذج مواقع انترنت ... وعند موافقه العميل المبدئيه على التصميم
+                                            يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                            ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير
+                                            من الملاحظات او الانتقادات للتصميم الاساسي.
+                                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه
+                                            وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل
+                                            المثال ... او نماذج مواقع انترنت ... وعند موافقه العميل المبدئيه على التصميم
+                                            يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                            ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير
+                                            من الملاحظات او الانتقادات للتصميم الاساسي.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                        عنوان تبويب مفتوح
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه
+                                            وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل
+                                            المثال ... او نماذج مواقع انترنت ... وعند موافقه العميل المبدئيه على التصميم
+                                            يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                            ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير
+                                            من الملاحظات او الانتقادات للتصميم الاساسي.
+                                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه
+                                            وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل
+                                            المثال ... او نماذج مواقع انترنت ... وعند موافقه العميل المبدئيه على التصميم
+                                            يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                            ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير
+                                            من الملاحظات او الانتقادات للتصميم الاساسي.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--tabs -->
+                        <ul class="nav nav-tabs styled-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link" id="styled-normal-tab" data-bs-toggle="pill" href="#normal-tab"
+                                   role="tab" aria-controls="normal-tab" aria-selected="false">عنوان تبويب مغلق</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="styled-active-tab" data-bs-toggle="pill"
+                                   href="#active-tab" role="tab" aria-controls="active-tab" aria-selected="true">عنوان
+                                    تبويب مفتوح</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="styled-icon-tab" data-bs-toggle="pill" href="#icon-tab"
+                                   role="tab" aria-controls="icon-tab" aria-selected="false"><img
+                                        src="assets/images/tab-icon.svg" alt=""> عنوان تبويب مع أيقونة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" id="styled-disabled-tab" data-bs-toggle="pill"
+                                   href="#disabled-tab" role="tab" aria-controls="disabled-tab" aria-selected="false"
+                                   tabindex="-1" aria-disabled="true">عنوان تبويب غير مفعل</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade" id="normal-tab" role="tabpanel" aria-labelledby="normal-tab">111
+                            </div>
+                            <div class="tab-pane fade show active" id="active-tab" role="tabpanel"
+                                 aria-labelledby="active-tab">222
+                            </div>
+                            <div class="tab-pane fade" id="icon-tab" role="tabpanel" aria-labelledby="icon-tab">333
+                            </div>
+                            <div class="tab-pane fade" id="disabled-tab" role="tabpanel" aria-labelledby="disabled-tab">
+                                444
+                            </div>
+                        </div>
+
+                        <table class="table table-responsive table-hover table-striped custom-table">
+                            <thead>
+                            <tr>
+                                <th scope="col">عنوان جدول</th>
+                                <th scope="col">عنوان جدول</th>
+                                <th scope="col">عنوان جدول</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a href="">رابط داخل جدول - رابط داخل جدول</a></td>
+                                <td>رابط داخل جدول - رابط داخل جدول</td>
+                                <td>رابط داخل جدول - رابط داخل جدول</td>
+                            </tr>
+                            <tr>
+                                <td>رابط داخل جدول - رابط داخل جدول</td>
+                                <td>رابط داخل جدول - رابط داخل جدول</td>
+                                <td>رابط داخل جدول - رابط داخل جدول</td>
+
+                            </tr>
+                            <tr>
+                                <td>رابط داخل جدول - رابط داخل جدول</td>
+                                <td>رابط داخل جدول - رابط داخل جدول</td>
+                                <td>رابط داخل جدول - رابط داخل جدول</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+
+                        <!--Start Pagination -->
+                        <div class="pagination-wrapper d-flex justify-content-center">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="6.055" height="9.378"
+                                                     viewBox="0 0 6.055 9.378">
+  <path id="Path_3183" data-name="Path 3183"
+        d="M-2.821-6.123a.7.7,0,0,0,0,1L1.166-1.143a.7.7,0,0,0,.993,0l.662-.665a.7.7,0,0,0,0-.993L0-5.625,2.818-8.452a.7.7,0,0,0,0-.993l-.662-.662a.7.7,0,0,0-.993,0Z"
+        transform="translate(3.027 10.314)" fill="#00afa9"/>
+</svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="6.055" height="9.378"
+                                                     viewBox="0 0 6.055 9.378">
+  <path id="Path_3183" data-name="Path 3183"
+        d="M-2.821-6.123a.7.7,0,0,0,0,1L1.166-1.143a.7.7,0,0,0,.993,0l.662-.665a.7.7,0,0,0,0-.993L0-5.625,2.818-8.452a.7.7,0,0,0,0-.993l-.662-.662a.7.7,0,0,0-.993,0Z"
+        transform="translate(3.027 10.314)" fill="#00afa9"/>
+</svg>
+</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--End Pagination -->
+
+
+                        <!-- videos-->
+                        <div class="row row-cols-1 row-cols-md-3 g-4 media-wrapper">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="video">
+                                        <iframe width="100%" height="295"
+                                                src="https://www.youtube.com/embed/IsiduXqEVnQ"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">يظهر عنوان الفيديو هنا</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="video">
+                                        <iframe width="100%" height="295"
+                                                src="https://www.youtube.com/embed/IsiduXqEVnQ"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">يظهر عنوان الفيديو هنا</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="video">
+                                        <iframe width="100%" height="295"
+                                                src="https://www.youtube.com/embed/IsiduXqEVnQ"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">يظهر عنوان الفيديو هنا</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-md-3 g-4 media-wrapper">
+                            <div class="col">
+                                <div class="card">
+                                    <a data-fancybox="gallery" href="assets/images/thumb@2x.jpg">
+                                        <img src="assets/images/thumb.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">يظهر عنوان الالبوم هنا</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <a data-fancybox="gallery" href="assets/images/thumb@2x.jpg">
+                                        <img src="assets/images/thumb.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">يظهر عنوان الالبوم هنا</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <a data-fancybox="gallery" href="assets/images/thumb@2x.jpg">
+                                        <img src="assets/images/thumb.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">يظهر عنوان الالبوم هنا</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Alerts -->
+                        <div class="skew underlined">
+                            <div class="skew-wrap bg-white text-orange">
+                                <h2>الرسائل التحذيرية والإشعارات</h2>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-midGray text-white" role="alert">
+                            <img src="assets/images/info.svg" alt="">
+                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص
+                            بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع
+                            انترنت
+                        </div>
+                        <div class="alert alert-blue text-white" role="alert">
+                            <img src="assets/images/info.svg" alt="">
+                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص
+                            بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع
+                            انترنت
+                        </div>
+                        <div class="alert alert-lightOrange text-white" role="alert">
+                            <img src="assets/images/info.svg" alt="">
+                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص
+                            بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع
+                            انترنت
+                        </div>
+                        <div class="alert alert-lightRed text-white" role="alert">
+                            <img src="assets/images/info.svg" alt="">
+                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص
+                            بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع
+                            انترنت
+                        </div>
+                        <div class="alert alert-primary text-white" role="alert">
+                            <img src="assets/images/info.svg" alt="">
+                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص
+                            بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع
+                            انترنت
+                        </div>
+                        <!--End Elements -->
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+</div>
+
+<!--End Slider -->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-footer d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center  align-items-center">
+                    <div class="right-footer d-flex justify-content-between align-items-center">
+                        <div class="copy">
+                            <p>جميع الحقوق محفوظة , وزارة التجارة © 2020</p>
+                        </div>
+                        <div class="social">
+                            <ul class="list-inline footer-social">
+                                <li class="list-inline-item"><a href="javascript:void(0)"> mcgovsa </a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)">
+                                    <img src="assets/images/youtube.svg" alt=""/>
+                                </a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)">
+                                    <img src="assets/images/instagram.svg" alt=""/>
+                                </a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)">
+                                    <img src="assets/images/facebook-square.svg" alt=""/>
+                                </a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)">
+                                    <img src="assets/images/twitter.svg" alt=""/>
+                                </a></li>
+                            </ul>
+                            <a class="mc" href="javascript:void(0)"> www.mc.gov.sa </a>
+                        </div>
+                    </div>
+                    <div class="left-footer d-flex justify-content-between align-items-center">
+                        <div class="logos">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="">خريطة الموقع</a></li>
+                                <li class="list-inline-item"><a href="">سياسة الخصوصية</a></li>
+                                <li class="list-inline-item"><a href="">شروط الإستخدام</a></li>
+                                <li class="list-inline-item"><a href="">السياسات الداخلية</a></li>
+                                <li class="list-inline-item"><img src="assets/images/roeya.svg" alt=""/></li>
+                                <li class="list-inline-item"><img src="assets/images/tegara.svg" alt=""/></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- jQuery -->
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap -->
+<script src="assets/js/jquery.fancybox.min.js"></script>
+
+<!--<script src="assets/js//masonry.pkgd.min.js"></script>-->
+<!--<script src="assets/js/swiper-bundle.min.js"></script>-->
+
+<script src="assets/js/custom.js"></script>
+<!--<script type="text/javascript" src="assets/slider/js/jquery.themepunch.tools.min.js"></script>-->
+<!--<script type="text/javascript" src="assets/slider/js/jquery.themepunch.revolution.min.js"></script>-->
+<!--Swiper Slider -->
+<!--<script src="assets/js/packery.pkgd.min.js"></script>-->
+<!--<script src="assets/js/draggabilly.pkgd.min.js"></script>-->
+
+
+</body>
+
+</html>
